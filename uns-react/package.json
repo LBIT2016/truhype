@@ -1,0 +1,51 @@
+{
+  "name": "uns-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "blueimp-load-image": "^2.20.1",
+    "dotenv": "^6.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "normalizr": "^3.3.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.6.3",
+    "react-color": "^2.17.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.6.3",
+    "react-ga": "^2.5.7",
+    "react-google-recaptcha": "^1.0.5",
+    "react-images": "^0.5.19",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "semantic-ui-react": "^0.84.0",
+    "video-react": "^0.13.1"
+  },
+  "scripts": {
+    "build-semantic": "cd src/semantic && gulp build-css build-assets",
+    "watch-semantic": "cd src/semantic && yarn run build-semantic && gulp watch",
+    "start": "yarn run build-semantic && react-scripts start",
+    "build": "yarn run build-semantic && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "semantic-ui": "^2.4.2"
+  },
+  "proxy": "http://localhost:3001"
+}
