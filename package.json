@@ -11,7 +11,7 @@
   "scripts": {
     "build": "concurrently \"cd uns-react && yarn build\" \"cd uns-api && yarn build\"",
     "clean": "concurrently \"rimraf node_modules\" \"cd uns-react && rimraf node_modules build\" \"cd uns-api && rimraf node_modules build\"",
-    "install": "(cd uns-react && sudo yarn) && (cd uns-api && sudo yarn)",
+    "install": "(cd uns-react && yarn) && (cd uns-api && yarn)",
     "start": "concurrently \"cd uns-react && yarn start\" \"cd uns-api && yarn start\"",
     "start:prod": "cd uns-api && sudo yarn start:prod"
   }
